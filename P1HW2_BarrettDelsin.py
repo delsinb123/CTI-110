@@ -3,13 +3,21 @@
 # P1HW2
 #create program on IDLE
 
-print("This program calculates and displays travel epenses")
+print("This program calculates and displays travel expenses")
 print()
 #Get info from user
-budget = input("Enter Budget:" )
-
+budget = int (input("Enter Budget: " ))
+print()
+location = input("Enter your travel destination: ")
+print()
+fuel = int(input("How much do you think you will spend on gas? "))
+print()
+hotel = int(input("Approximately, how much will you  need for accomodation/hotel? "))
+print()
+food = int(input("Last, how much do you need for food? "))
+print()
 # add expenses
-expenses = fuel + hptel + food
+expenses = fuel + hotel + food
 remainAmount = budget - expenses
 
 # display results
@@ -24,3 +32,4 @@ print("Food:", food)
 print()
 print("Remaining Balance:", remainAmount)
 #f"${budget:.2f} to create dollar sign and 2 decimal points after
+
